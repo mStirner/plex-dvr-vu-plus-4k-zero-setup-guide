@@ -3,11 +3,18 @@ Setup a DVR/Live TV Tuner in plex media server. I used a VU+ Zeor 4K<br />
 The guide is what i have done in a couple of hours on a sunday evening, and not a 1:1 copy/pasta installation walktrough.
 <br /><br />
 Live TV in plex is a nightmare. <br />
-Especillay the EPG(XMLTV) crap...
+Especillay the EPG(XMLTV) crap...<br /><br />
+But this solution has the advantage that you can use CI encrypted channels.<br />
+Which is with the most (and suported tuner from plex) not possible.
+
+# Note
+This "guide" was to archive and document the installation progress of all kind of things.<br />
+Because in a couple of years/months i cant rember what i have done, and perhaps i need in the future again.
 
 ## TL;DR
 - Install the VU+ Receiver
 - Unwrap / put all cables in
+- Optional: Put in your CI module with the smart card
 - Flash it with [OpenVIX image](https://www.openvix.co.uk/index.php/downloads/vu-plus-images/vu-zero-4k/)
 - Copy HRTunerProxy plugin to it
 - Reboot device
@@ -34,6 +41,7 @@ Do a basic setup of the STB/Receiver and proceed with the installation steps bel
 - Remove USB stick
 - Power receiver on
 - Proceed instalaltion guide
+- Optional: sort the channels
 
 ### 2) Install the HRTunerProxy Plugin
 - Copy content of the `plugin` folder to `/usr/lib/enigma2/python/Plugins/SystemPlugins/HRTunerProxy` on the receiver
@@ -53,7 +61,9 @@ Do a basic setup of the STB/Receiver and proceed with the installation steps bel
 
 ## Links / Related information
 - https://github.com/OpenViX/HRTunerProxy
-- < link to `epg_stb.sh` script >
+- https://forums.plex.tv/t/epg-to-xml-from-enigma2/312787
+- https://forums.plex.tv/uploads/short-url/q34sQk25RjY6e83CDJaVHnOI1r5.zip
 - https://www.openvix.co.uk/index.php/downloads/vu-plus-images/vu-zero-4k/
 - https://meintechblog.de/2018/03/03/pimp-my-plex-dvr-live-tv-und-tv-recording-per-vu/
 - https://github.com/OpenViX/HRTunerProxy/issues/55
+- https://forums.plex.tv/t/enigma2-support-for-plex-dvr-livetv/194136/555
