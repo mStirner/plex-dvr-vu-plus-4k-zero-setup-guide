@@ -67,3 +67,7 @@ Do a basic setup of the STB/Receiver and proceed with the installation steps bel
 - https://meintechblog.de/2018/03/03/pimp-my-plex-dvr-live-tv-und-tv-recording-per-vu/
 - https://github.com/OpenViX/HRTunerProxy/issues/55
 - https://forums.plex.tv/t/enigma2-support-for-plex-dvr-livetv/194136/555
+- https://github.com/cvarelaruiz/owi2plex/tree/master ¹
+
+## Footnotes
+¹) Not used here, but seems interesting/promising 
