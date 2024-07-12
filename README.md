@@ -52,6 +52,9 @@ Do a basic setup of the STB/Receiver and proceed with the installation steps bel
 - Copy/Download the epg_stb.sh script to the plex server
 - Edit epg_stb.cfg to match your needs
 - Run the script `epg_stb.sh GET_ALL` to fetch EPG data from the Receiver
+- Optional: Add cronjob to do this, see `cronjob.txt`
+  - Tell plex to refresh the epg data also, `curl -v "http://127.0.0.1:32400/livetv/dvrs/14/reloadGuide" -X "POST"` (change the tuner id "14" to what ever yours is)
+  - Add curl command above to cronjob, append via `&& curl -v "http://127.0.0.1:32400/livetv/dvrs/14/reloadGuide" -X "POST"`
 
 ### 4) Setup the tuner in plex
 - Add the tuner, if not shown, use ip/full url (`http://<ip>:6081`)
